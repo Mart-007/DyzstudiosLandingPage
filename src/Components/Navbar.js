@@ -1,9 +1,10 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-function Nav() {
-    return (
 
+function Navbar() {
+    return (
+<>
            
 <div>
     <div data-spy="scroll" data-target=".navbar" data-offset="0" >
@@ -22,9 +23,19 @@ function Nav() {
                                     <a className="nav-link" href="#">Home</a>
                                 </li>
                                 </Link>
-                                <Link  to="/services">
+                                <Link  to="/products">
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#services">Services</a>
+                                    <a className="nav-link" href="#products">Products</a>
+                                </li>
+                                </Link>
+                                <Link  to="/stacks">
+                                <li className="nav-item">
+                                    <a className="nav-link" href="#stacks">Stacks</a>
+                                </li>
+                                </Link>
+                                <Link  to="/testimonials">
+                                <li className="nav-item">
+                                    <a className="nav-link" href="#testimonials">Testimonials</a>
                                 </li>
                                 </Link>
                                 <Link  to="/contact">
@@ -34,12 +45,17 @@ function Nav() {
                                 </Link>
                             </ul>
                         </div>
-                 </div>
-        </nav>
-    </div>
-    
- </div>
+                     </div>
+                    </nav>
+                    </div>
+                </div>
+
+
+
+  </>
+
+ 
     );
 }
 
-export default Nav;
+export default Navbar;

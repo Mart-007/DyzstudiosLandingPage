@@ -1,9 +1,17 @@
+
+import './Components/App.css';
+
 import React  from 'react'
 import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom'
 import Contact from './Components/Contact';
-import Services from './Components/Services';
-import Nav from './Components/Nav';
-import Hero from './Components/Hero';
+import Products from './Components/Products';
+import Home from './Components/Home';
+import Navbar from './Components/Navbar';
+//import Hero from './Components/Hero';
+//import Footer from './Components/Footer';
+import Testimonials from './Components/Testimonials';
+import './Components/Testimonials.css';
+
 
 
 
@@ -12,14 +20,18 @@ function App () {
       <Router>
        <div className="App">
 
-           <Nav />
-      <Switch>
-            <Route path="/Contact" component={Contact} />
-            <Route path="/services" component={Services} />
-            <Route path="/hero" componets={Hero} />
+           <Navbar />
+         
+       <Switch>
+       <Route path='/' exact component={Home} />
+            <Route path="/products" component={Products} />
+            <Route path="/testimonials" exact component={Testimonials} />
+            <Route path="/Contact" component={Contact }  />
       </Switch>
-     
+       
+    
       </div>
+      
       </Router>
 
  );

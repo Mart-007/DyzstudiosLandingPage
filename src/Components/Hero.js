@@ -3,7 +3,8 @@ import React from 'react'
  function Hero() {
     return (
         <div>
-        <header className="jumbotron jumbotron-fluid" style={{backgroundImage: "url(./images/hero-bg.jpg"}}>
+           
+        <header className="jumbotron jumbotron-fluid" style={{backgroundImage: "url./images/hero-bg.jpg"}}>
         <div class="container-fluid text-center"> 
            <h1 className="display-3 " >The Best Solution for Your Business.</h1>
            <p className="lead pb-4 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, aut.</p>

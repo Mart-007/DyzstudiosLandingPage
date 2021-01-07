@@ -1,0 +1,34 @@
+body {
+    padding-top: 56px;
+  }
+  
+  .navbar-brand {
+    font-weight: 500;
+  }
+  .contact-image {
+    height: 60vh;
+    width: 100vw;
+    z-index: -2;
+    padding: 0;
+  }
+  .nav-item {
+    font-weight: 500;
+    padding: 15px;
+  
+  }
+  
+  .btn-primary {
+    background-color: #c60063;
+    border-color: #c60063;
+  }
+  
+  .btn-secondary {
+    background-color: transparent;
+    border-color: #c60063;
+    color: #c60063;
+  }
+  #contact {
+    /*background-image: url("./images/contact.png") no-repeat center;*/
+    height: 70vh;
+    width: 100vw; 
+  }
